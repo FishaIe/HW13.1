@@ -3,13 +3,13 @@ import org.junit.jupiter.api.Test;
 
 public class GameTest {
 
-    Player player1 = new Player(1,"Bob",10);
-    Player player2 = new Player(2,"Jack",23);
-    Player player3 = new Player(3,"Peter",30);
-    Player player4 = new Player(4,"Nick",23);
+    Player player1 = new Player(1, "Bob", 10);
+    Player player2 = new Player(2, "Jack", 23);
+    Player player3 = new Player(3, "Peter", 30);
+    Player player4 = new Player(4, "Nick", 23);
 
     @Test
-    public void roundFirstStrongerTest(){
+    public void roundFirstStrongerTest() {
         Game game = new Game();
 
         game.register(player1);
@@ -24,7 +24,7 @@ public class GameTest {
     }
 
     @Test
-    public void roundSecondStrongerTest(){
+    public void roundSecondStrongerTest() {
         Game game = new Game();
 
         game.register(player1);
@@ -39,7 +39,7 @@ public class GameTest {
     }
 
     @Test
-    public void roundTieTest(){
+    public void roundTieTest() {
         Game game = new Game();
 
         game.register(player1);
@@ -54,7 +54,7 @@ public class GameTest {
     }
 
     @Test
-    public void roundErrorTest(){
+    public void roundErrorTest() {
         Game game = new Game();
 
         game.register(player2);
