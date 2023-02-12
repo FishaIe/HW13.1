@@ -9,6 +9,10 @@ public class Player {
         this.strength = strength;
     }
 
+    public Player() {
+
+    }
+
     public int getId() {
         return id;
     }
